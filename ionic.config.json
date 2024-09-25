@@ -1,0 +1,7 @@
+{
+  "name": "Gateway",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
