@@ -1,5 +1,9 @@
 # Gateway Soluciones en TI - Aplicación de Gestión de Productos Electrónicos
 
+## Descripción del Proyecto
+
+La aplicación **Gateway Soluciones en TI** permite a la empresa gestionar y vender productos electrónicos a través de una interfaz intuitiva, proporcionando a los usuarios una experiencia de compra segura y eficaz mediante la integración de **Stripe** para pagos. El objetivo principal es facilitar la administración del catálogo de productos y las transacciones, garantizando seguridad en cada proceso.
+
 ## Objetivo
 
 Desarrollar una aplicación móvil para la gestión y venta de productos electrónicos de la empresa **Gateway Soluciones en TI**, con una interfaz intuitiva y un método de pago seguro integrado a través de **Stripe**.
@@ -75,7 +79,27 @@ Cada tarjeta de Trello incluye:
 - Prioridad (alta, media, baja).
 - Fecha límite de entrega.
 
-## Instalación
+## Control de Versiones
+
+La herramienta de control de versiones seleccionada es **Git**, con el repositorio alojado en **GitHub**. El flujo de trabajo sigue un enfoque basado en ramas:
+
+- **`main`**: Contiene la última versión estable del proyecto.
+- **`develop`**: Rama de desarrollo donde se integran nuevas características.
+- **`feature/*`**: Ramas para el desarrollo de nuevas funcionalidades específicas.
+- **`hotfix/*`**: Ramas para resolver errores críticos en la versión de producción.
+
+La estrategia de versionamiento sigue el modelo **SemVer (Versionado Semántico)**, con etiquetas de versiones formateadas como `vMAJOR.MINOR.PATCH` (por ejemplo, `v1.2.3`).
+
+## Estrategia de Despliegue
+
+Para el despliegue de la aplicación, se utiliza una infraestructura de CI/CD que automatiza el proceso de pruebas y despliegue. Los entornos de despliegue incluyen:
+
+- **Desarrollo**: Utilizado para probar nuevas características en un entorno no productivo.
+- **Producción**: Entorno principal, al que se despliegan únicamente versiones estables.
+
+Cada vez que se realiza una fusión en `main`, el flujo de CI/CD realiza un despliegue automático al entorno de producción. 
+
+## Instrucciones para Clonar el Repositorio
 
 Para clonar este repositorio e instalar las dependencias, sigue los siguientes pasos:
 
